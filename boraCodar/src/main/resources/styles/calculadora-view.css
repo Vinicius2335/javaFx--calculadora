@@ -1,0 +1,27 @@
+.formula {
+    -fx-background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #2D2A37);
+}
+
+.btn {
+    -fx-background-radius: 48px;
+    -fx-background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #2D2A37);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-font-weight: 400;
+    -fx-font-size: 24px;
+}
+
+.btn-operation {
+    -fx-background-radius: 48px;
+    -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), #462878);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-font-weight: 400;
+    -fx-font-size: 24px;
+}
+
+.btn-equals {
+    -fx-background-radius: 48px;
+    -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), #7F45E2);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-font-weight: 400;
+    -fx-font-size: 24px;
+}

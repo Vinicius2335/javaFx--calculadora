@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="356.0" style="-fx-background-color: #2D2A37;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viniciusvieira.boracodar.controller.CalculadoraController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="57.0" prefHeight="86.0" prefWidth="288.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="54.0">
+         <children>
+            <Label fx:id="lblCalculo" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="36.0" layoutY="14.0" prefHeight="30.0" prefWidth="248.0" styleClass="formula" stylesheets="@../styles/calculadora-view.css" textAlignment="RIGHT" textFill="#6b6b6b" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <AnchorPane layoutX="61.0" layoutY="38.0" prefHeight="50.0" prefWidth="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="22.0">
+               <children>
+                  <Label layoutY="5.0" prefHeight="20.0" prefWidth="20.0" text="=" textFill="#6b6b6b" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblResultado" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-61.0" layoutY="11.0" prefHeight="36.0" prefWidth="228.0" text="0" textAlignment="RIGHT" textFill="#ebebeb" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="165.0" prefHeight="368.0" prefWidth="200.0" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#onClickCE" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="CE" textFill="#975dfa" />
+            <Button layoutY="76.0" mnemonicParsing="false" onMouseClicked="#onClick1" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="1" textFill="#ebebeb" />
+            <Button layoutY="152.0" mnemonicParsing="false" onMouseClicked="#onClick4" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="4" textFill="#ebebeb" />
+            <Button layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick7" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="7" textFill="#ebebeb" />
+            <Button fx:id="btnExit" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#onClickedExit" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="EX" textFill="#ebebeb" />
+            <Button layoutX="76.0" mnemonicParsing="false" onMouseClicked="#onClickClear" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="C" textFill="#ebebeb" />
+            <Button layoutX="152.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="\%" textFill="#ebebeb" />
+            <Button fx:id="btnDivision" layoutX="228.0" mnemonicParsing="false" onMouseClicked="#onClickedDivision" prefHeight="64.0" prefWidth="64.0" styleClass="btn-operation" stylesheets="@../styles/calculadora-view.css" text="/" textFill="#ebebeb" />
+            <Button layoutX="76.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#onClick2" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="2" textFill="#ebebeb" />
+            <Button layoutX="76.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#onClick5" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="5" textFill="#ebebeb" />
+            <Button layoutX="76.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick8" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="8" textFill="#ebebeb" />
+            <Button layoutX="152.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#onClick3" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="3" textFill="#ebebeb" />
+            <Button layoutX="152.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#onClick6" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="6" textFill="#ebebeb" />
+            <Button fx:id="btnMultiplication" layoutX="228.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#onClickedMultiplication" prefHeight="64.0" prefWidth="64.0" styleClass="btn-operation" stylesheets="@../styles/calculadora-view.css" text="X" textFill="#ebebeb" />
+            <Button fx:id="btnSubtraction" layoutX="228.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#onClickedSubtraction" prefHeight="64.0" prefWidth="64.0" styleClass="btn-operation" stylesheets="@../styles/calculadora-view.css" text="-" textFill="#ebebeb" />
+            <Button layoutX="152.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick9" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="9" textFill="#ebebeb" />
+            <Button layoutX="76.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#onClick0" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="0" textFill="#ebebeb" />
+            <Button layoutX="152.0" layoutY="304.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="btn" stylesheets="@../styles/calculadora-view.css" text="." textFill="#ebebeb" />
+            <Button layoutX="228.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClickSum" prefHeight="64.0" prefWidth="64.0" styleClass="btn-operation" stylesheets="@../styles/calculadora-view.css" text="+" textFill="#ebebeb" />
+            <Button fx:id="btnResult" layoutX="228.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#onClickedResult" prefHeight="64.0" prefWidth="64.0" styleClass="btn-equals" stylesheets="@../styles/calculadora-view.css" text="=" textFill="#ebebeb" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
